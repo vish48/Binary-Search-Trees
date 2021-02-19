@@ -9,12 +9,12 @@ The main pieces of functionality this c++ program offers:
 * Search for a word in the binary search tree.
 * Traverse the binary search tree.
 * Display what come before a user entered word. 
-..* Checks to see if the word is present in the binary search tree first.
+  ..* Checks to see if the word is present in the binary search tree first.
 * Display what comes after a user entered word.
-..* Checks to see if the word is present in the binary search tree first.
+  ..* Checks to see if the word is present in the binary search tree first.
 * Compares multiple binary search trees that have been created.
-* When this option is selected, the program should display the following information about the BST:
-..* The number of nodes in the tree
-..* The height of the tree
-..* The width of the tree
+* The program should display the following information about the BST:
+  ..* The number of nodes in the tree
+  ..* The height of the tree
+  ..* The width of the tree
 

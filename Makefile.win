@@ -1,15 +1,15 @@
-# Project: Assignment2
+# Project: bst
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = BinaryTree.o Stack.o BinarySearchTree.o Queue.o Assignment2.o
-LINKOBJ  = BinaryTree.o Stack.o BinarySearchTree.o Queue.o Assignment2.o
+OBJ      = BinaryTree.o Stack.o BinarySearchTree.o Queue.o bst.o
+LINKOBJ  = BinaryTree.o Stack.o BinarySearchTree.o Queue.o bst.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = Assignment2.exe
+BIN      = bst.exe
 CXXFLAGS = $(CXXINCS) -m32
 CFLAGS   = $(INCS) -m32
 RM       = rm.exe -f
@@ -36,5 +36,5 @@ BinarySearchTree.o: BinarySearchTree.cpp
 Queue.o: Queue.cpp
 	$(CPP) -c Queue.cpp -o Queue.o $(CXXFLAGS)
 
-Assignment2.o: Assignment2.cpp
-	$(CPP) -c Assignment2.cpp -o Assignment2.o $(CXXFLAGS)
+bst.o: bst.cpp
+	$(CPP) -c bst.cpp -o bst.o $(CXXFLAGS)

@@ -1,6 +1,6 @@
 [Project]
-FileName=Assignment2.dev
-Name=Assignment2
+FileName=bst.dev
+Name=bst
 Type=1
 Ver=2
 ObjFiles=
@@ -19,7 +19,7 @@ ObjectOutput=
 LogOutput=
 LogOutputEnabled=0
 OverrideOutput=0
-OverrideOutputName=Assignment2.exe
+OverrideOutputName=bst.exe
 HostApplication=
 UseCustomMakefile=0
 CustomMakefile=
@@ -141,7 +141,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=Assignment2.cpp
+FileName=bst.cpp
 CompileCpp=1
 Folder=
 Compile=1

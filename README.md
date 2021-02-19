@@ -20,8 +20,9 @@ The main pieces of functionality this c++ program offers:
   * The weight of the tree.
   * The smallest and biggest word in the tree (alphabetical order).
 
+# Binary Tree Functions in BinaryTree.cpp
 Return Type  | Prototype of function and description
 ------------- | -------------
-Content Cell  | Content Cell
+BTNode *  | CreateBTNode (BTNode * parent, string data)
 Content Cell  | Content Cell
 

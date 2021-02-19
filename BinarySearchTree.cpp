@@ -9,7 +9,7 @@
 
 using namespace std;
 
-// write code for Assignment 2 functions here 
+// write code for functions here 
 
 BTNode * ceiling (BTNode * root, string key) 
 {
@@ -35,7 +35,7 @@ BTNode * deleteNode (BTNode * root, string key)
     if (key < root->data)   //if key is less than root, search left subtree
         root->left = deleteNode(root->left, key); 
 
-    if (key > root->data) 	//if key is graeter than root, search right subtree
+    if (key > root->data) 	//if key is greater than root, search right subtree
         root->right = deleteNode(root->right, key); 
   
     else   //if node=key then delete this node
@@ -67,13 +67,13 @@ BTNode * deleteNode (BTNode * root, string key)
 
 BTNode * floor (BTNode * root, string key) 
 {
-	if (root == NULL) 	//emptr tree
+	if (root == NULL) 	//empty tree
         return NULL; 
     
 	if (root->data == key) //if root is equal to key, return root
         return root; 
   
-    			//is root is smallet than key, search right subtree
+    //if root is smaller than key, search right subtree
 	if (root->data < key) 
 	{ 
         BTNode* x = floor(root->right, key); 
@@ -154,8 +154,6 @@ BTNode *insert (BTNode * root, string key)
 
 
 
-
-//	Functions you are provided with
 
 BTNode * inOrderSuccessor (BTNode * node) 
 {

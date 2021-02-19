@@ -14,7 +14,14 @@ The main pieces of functionality this c++ program offers:
   * Checks to see if the word is present in the binary search tree first.
 * Compares multiple binary search trees that have been created.
 * The program should display the following information about the BST:
-  * The number of nodes in the tree
-  * The height of the tree
-  * The width of the tree
+  * The number of nodes in the tree.
+  * The height of the tree.
+  * The width of the tree.
+  * The weight of the tree.
+  * The smallest and biggest word in the tree (alphabetical order).
+
+Return Type  | Prototype of function and description
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 

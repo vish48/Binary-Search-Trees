@@ -11,9 +11,12 @@
 
 using namespace std;
 
-// write code for Assignment 2 functions here
+// write code for functions here
 
-
+//Creates a binary tree node
+//Paramerters:
+//BTNode * parent: a pointer to the parent of the tree
+//string data: a string value to be added to the tree
 BTNode * createBTNode (BTNode * parent, string data) 
 {
 	BTNode * newnode;				//creating new node
@@ -29,20 +32,21 @@ BTNode * createBTNode (BTNode * parent, string data)
 }
 
 
-
+//Determines the height of the left and right side of the tree recursively 
+//and returns the greater of the two values + 1 to account for root
 int height(BTNode * root) 
 {
 	if (root == NULL)  			//null root means empty tree so no height
         return 0;  
     else
     {  
-        int lefth = height(root->left);  			//getting height of left side of tree recursively
-        int righth = height(root->right);  			//getting height of right side of tree recursively
+        int left = height(root->left);  			//getting height of left side of tree recursively
+        int right = height(root->right);  			//getting height of right side of tree recursively
       
-        if (lefth > righth)  					//returning the greater value + 1 to account for root
-            return(lefth + 1);  
+        if (left > right)  					//returning the greater value + 1 to account for root
+            return(left + 1);  
         else 
-			return(righth + 1);  
+			return(right + 1);  
     }  
 }
 
@@ -136,8 +140,6 @@ int width(BTNode * root)
     } 
     return max; 				//returning max width of tree
 }
-
-// functions you are provided with
 
 int moment (BTNode * root) {
 

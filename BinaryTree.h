@@ -1,13 +1,11 @@
 #ifndef _BINARYTREE_H
 #define _BINARYTREE_H
 
-// function prototypes for functions given
+// function prototypes
 
 int moment (BTNode * root);
 void inOrder (BTNode * root);
 void levelOrder (BTNode * root);
-
-// function prototypes for Assignment 2
 
 BTNode * createBTNode (BTNode * parent, string data);
 int height(BTNode * root);

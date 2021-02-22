@@ -2,8 +2,9 @@
 #define _NODETYPES_H
 
 #include <iostream>
-	using namespace std;
-	
+using namespace std;
+
+//Struct prototypes for Node Types
 struct BTNode {
 	string data;
 	int count;

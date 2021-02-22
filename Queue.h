@@ -1,6 +1,8 @@
 #ifndef _QUEUE_H
 #define _QUEUE_H
 
+
+//Struct and function prototypes for Queues
 struct Queue {
 	Node * top;
 	Node * last;

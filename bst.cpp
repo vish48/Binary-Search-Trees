@@ -4,28 +4,16 @@
 #include <fstream>
 #include <cstring>
 
+//Headers files that contain the definitions of Nodes BinaryTree and BinarySearchTree objects
 #include "NodeTypes.h"
 #include "BinaryTree.h"
 #include "BinarySearchTree.h"
 
 using namespace std;
+void menu();
 
-void menu()
-{
-	cout<<endl<<endl<<endl<<"Binary Search Tree (BST) \n ---------------------------------------------- \n\n";
-	cout<<"1. Create BST from File \n";
-	cout<<"2. Add Word to BST \n";
-	cout<<"3. Delete Word from BST \n";
-	cout<<"4. Search for Word in BST \n";
-	cout<<"5. Traverse BST \n";
-	cout<<"6. What Comes Before Word in BST? \n";
-	cout<<"7. What Comes After Word in BST? \n";
-	cout<<"8. Compare BSTs \n";
-	cout<<"9. Statistics \n";
-	cout<<"Q. Quit \n";
-	cout<<"\nPlease enter an option: ";
-}
-
+//Main function that displays the menu based program.
+//Returns triggers the corresponding event based on the selected number listed in the menu function()
 int main() 
 {
   	// write code to generate menu and implement Options 1-9 and 'Q'.
@@ -274,4 +262,19 @@ int main()
 	
 	cout<<"\nEnd of program";
 	return 0;
+}
+void menu()
+{
+	cout<<endl<<endl<<endl<<"Binary Search Tree (BST) \n ---------------------------------------------- \n\n";
+	cout<<"1. Create BST from File \n";
+	cout<<"2. Add Word to BST \n";
+	cout<<"3. Delete Word from BST \n";
+	cout<<"4. Search for Word in BST \n";
+	cout<<"5. Traverse BST \n";
+	cout<<"6. What Comes Before Word in BST? \n";
+	cout<<"7. What Comes After Word in BST? \n";
+	cout<<"8. Compare BSTs \n";
+	cout<<"9. Statistics \n";
+	cout<<"Q. Quit \n";
+	cout<<"\nPlease enter an option: ";
 }

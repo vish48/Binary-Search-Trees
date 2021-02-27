@@ -26,10 +26,11 @@ int main()
 	ifstream fin;	
 	menu();
 	cin>>choice;
-	
+	//Functionality for the menu options
 	while(choice != "Q" && choice !="q")			//while user has not chosen to quit
 	{
-	
+		//Creates a binary search tree by reading data from a file
+		//Prompts the user to enter the name of the file with extension included
 		if(choice== "1")							//if option 1 is selected
 		{
 			if (created==true)			//if BST already created
@@ -67,6 +68,7 @@ int main()
 			cin>>choice;
 		}//endif for option1
 		
+		//Prompts the user to enter a word to insert into the Binary Search Tree
 		if(choice=="2")
 		{
 			cout<<"\nPlease enter the word to insert in the BST or M (Menu): ";
@@ -85,6 +87,7 @@ int main()
 			cin>>choice;
 		}
 		
+		//Prompts the user to enter the desired word to delete from the binary search tree
 		if(choice=="3")
 		{
 			cout<<"\nPlease enter the word to delete from the BST or M (Menu): ";
@@ -107,6 +110,9 @@ int main()
 			cin>>choice;
 		}
 		
+		//Prompts the user to enter a word and finds the frequency of the desired word.
+		//displays informative message to user if found
+		//displays informative message to user if not found
 		if(choice=="4")
 		{
 			cout<<"\nPlease enter a word to search for or M (Menu): ";
@@ -133,6 +139,8 @@ int main()
 			cin>>choice;
 		}
 		
+		//Displays the two traversal associated with a binary search tree
+		//Inorder and Pre-order traversal
 		if(choice=="5")				//call pre and inorder traversal functions
 		{
 			cout<<"\nPreorder Traversal: \n";
@@ -144,6 +152,10 @@ int main()
 			cin>>choice;
 		}
 		
+		//Prompts the user for a word to find predecessor of that word
+		//Displays the predecessor if the word has one
+		//Displays informative message if it has no predecessor
+		//Displays message saying the word doesn't exist if not found in bst
 		if(choice=="6")						
 		{
 			cout<<"\nEnter word: ";
@@ -167,6 +179,10 @@ int main()
 			cin>>choice;
 		}
 		
+		//Prompts the user for a word to find successor of that word
+		//Displays the successor if the word has one
+		//Displays informative message if it has no successor 
+		//Displays message saying the word doesn't exist if not found in bst
 		if(choice=="7")
 		{
 			cout<<"\nEnter word: ";
@@ -189,6 +205,8 @@ int main()
 			cin>>choice;
 		}
 		
+		//Prompts the user to enter a file name
+		//Evaluates two binary search trees to determine if they are equal
 		if(choice=="8")
 		{
 			cout<<"\nPlease enter name of file to create BST or M (Menu): ";
@@ -226,6 +244,7 @@ int main()
 			cin>>choice;
 		}
 		
+		//Displays statistical data based on the BST
 		if(choice=="9")
 		{
 			m=moment(root);												//call moment, height, widtth, weight. treeMin and treeMx functions
